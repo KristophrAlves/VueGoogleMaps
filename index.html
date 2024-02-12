@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vite App</title>
+    <!-- Importe o Vue -->
+    <script src="https://cdn.jsdelivr.net/npm/vue@3.2.6/dist/vue.global.prod.js"></script>
+    <!-- Defina a função initMap antes de carregar a API do Google Maps -->
+    <script>
+      function initMap() {
+        new Vue({
+          el: '#app'
+        });
+      }
+    </script>
+  </head>
+  <body>
+    <div id="app"></div>
+    <script src="https://maps.googleapis.com/maps/api/js?key=GOOGLE_APY_KEY&callback=initMap" defer></script>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
